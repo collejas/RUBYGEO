@@ -1,0 +1,132 @@
+/* main.css */
+
+/* Reset de estilos y estilos generales */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Perpetua', 'Baskerville', 'Big Caslon', 'Palatino Linotype', 'Palatino', serif;
+    margin: 0; /* Añadido para asegurarse de que no haya margen predeterminado en el cuerpo */
+    padding: 0;
+}
+
+/* Esquema de colores de marca */
+.color1 { color: #e3dfba; }
+.color2 { color: #c8d6bf; }
+.color3 { color: #93ccc6; }
+.color4 { color: #6cbdb5; }
+.color5 { color: #1a1f1e; }
+
+/* Estructura de página */
+header {
+    background-color: #1a1f1e;
+    color: #e3dfba;
+    padding: 1.5%;
+    height: 35px; /* Ajusta la altura de la cabecera según tus necesidades */
+    position: fixed;
+    top: 0;
+    width: 100%; /* Ocupa el ancho completo de la ventana */
+    z-index: 1000; /* Asegura que la cabecera esté sobre otros elementos */
+}
+
+
+
+main {
+    background-color: #c8d6bf;
+    padding: 20px;
+    min-height: calc(100vh - 70px); /* El cálculo garantiza que el cuerpo ocupe el espacio entre la cabecera y el pie de página */
+    margin-top: 0px; /* Ajusta el margen superior para dejar espacio para la cabecera fija */
+}
+
+
+footer {
+    background-color: #1a1f1e;
+    color: #e3dfba;
+    padding: 10px;
+    height: 20px; /* Ajusta la altura del pie de página según tus necesidades */
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Ocupa el ancho completo de la ventana */
+}
+
+/* Recuadros y botones */
+.box {
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 10px; /* Espaciado interno */
+    border: 2px solid #6cbdb5; /* Borde con color de contraste */
+    max-width: 300px; /* o ajusta el valor según tus necesidades */
+    margin: auto; /* Centrar el elemento dentro de su contenedor padre */
+    overflow: auto; /* Ajuste para contener el contenido y permitir el ajuste automático de altura */
+    display: flex; /* Añadido para que flex-direction funcione correctamente */
+    flex-direction: column; /* Apilar hijos verticalmente */
+}
+
+/* Estilo para la cabecera de .box */
+.box-header {
+    background-color: #1a1f1e; /* Color de fondo de la cabecera */
+    color: #e3dfba; /* Color del texto de la cabecera */
+    padding: 5px; /* Espaciado interno de la cabecera */
+    border-bottom: 2px solid #6cbdb5; /* Borde inferior con color de contraste */
+}
+
+/* Estilo para el cuerpo de .box */
+.box-body {
+    /* Puedes ajustar el color de fondo del cuerpo según tus necesidades */
+    background-color: #c8d6bf;
+    padding: 10px; /* Espaciado interno del cuerpo */
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+}
+
+/* Estilo para el campo de entrada y etiqueta */
+.box-body label,
+.box-body input {
+    margin-bottom: 10px; /* Espaciado entre etiquetas e inputs */
+}
+
+/* Estilo para alinear a la derecha el botón de iniciar sesión */
+.box-body button {
+    margin-top: auto; /* Empujar el botón hacia la parte inferior */
+}
+
+/* Estilo para el pie de .box */
+.box-footer {
+    background-color: #1a1f1e; /* Color de fondo del pie */
+    color: #e3dfba; /* Color del texto del pie */
+    padding: 5px; /* Espaciado interno del pie */
+    border-top: 2px solid #6cbdb5; /* Borde superior con color de contraste */
+}
+
+/* Centrar vertical y horizontalmente */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Centrar verticalmente */
+.center-vertical {
+    display: flex;
+    align-items: center;
+    height: 100vh; /* Establecer altura al 100% de la ventana para centrado vertical */
+}
+
+/* Centrar horizontalmente */
+.center-horizontal {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Establecer ancho al 100% para centrado horizontal */
+}
+
+.button {
+    background-color: #93ccc6; /* Color intermedio para botones */
+    color: #1a1f1e; /* Texto en botones */
+    border: 2px solid #6cbdb5; /* Borde con color de contraste */
+    border-radius: 5px; /* Esquinas redondeadas en botones */
+    padding: 8px 16px; /* Espaciado interno en botones */
+    text-decoration: none; /* Eliminar subrayado en enlaces que parecen botones */
+    display: inline-block; /* Hacer que los enlaces se vean como bloques */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}

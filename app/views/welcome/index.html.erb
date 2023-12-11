@@ -1,0 +1,47 @@
+<!-- app/views/welcome/index.html.erb -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a Mi Sitio</title>
+  <%= stylesheet_link_tag "application", "main", "data-turbo-track": "reload" %>
+</head>
+<body>
+  <header>
+    <!-- Contenido del encabezado según main.css -->
+    <h1>Cabecera</h1>
+  </header>
+
+  <main class="center-vertical center-horizontal">
+    <!-- Contenido del cuerpo según main.css -->
+    <div class="box center">
+      <!-- Cabecera de .box -->
+      <div class="box-header">
+        <h2>Título del Contenedor</h2>
+      </div>
+      
+      <!-- Cuerpo de .box -->
+      <div class="box-body">
+        <label for="username">Nombre de usuario:</label> <input type="text" id="username" name="username" required>
+              
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="button center">Iniciar Sesión</button>
+      </div>
+
+      <!-- Pie de .box -->
+      <div class="box-footer">
+        <p>Pie de página del Contenedor</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- Contenido del pie según main.css -->
+    <p>Pie de página</p>
+  </footer>
+</body>
+</html>
